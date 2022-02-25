@@ -7,10 +7,10 @@ Dans ce depot nous avons creer une simple application de boite à idée en utili
 
 ## contribution
 
-__ Pour contribuer au depot, il faut :
--- Forker le depot
--- Cloner le depot forker
--- Faites vos modifications
--- Et envoyer vos pull requests
+# Pour contribuer au depot, il faut : <br />
+- Forker le depot <br />
+- Cloner le depot forker <br />
+- Faites vos modifications <br />
+- Et envoyer vos pull requests <br />
 
 ## THIARE 💡
