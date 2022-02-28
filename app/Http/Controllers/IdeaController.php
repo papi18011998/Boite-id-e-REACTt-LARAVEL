@@ -34,4 +34,15 @@ class IdeaController extends Controller
         ]);
         return $get_idea_to_update;
     }
+    public function delete($id,Request $request){
+        $get_idea_to_delete = Idea:: findOrFail($id);
+        //get the title of deleted idea
+        $title_idea = $get_idea_to_delete->title;
+        // Send suppression message confirmation
+        $message = 'L\'idée '.$title_idea.' a bien été suprimmé!!!';
+        //delete idea
+        $get_idea_to_delete->delete();
+        //Send Response
+        return new JsonResponse($message,'200');
+    }
 }

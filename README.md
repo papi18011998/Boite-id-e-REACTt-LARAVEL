@@ -21,5 +21,7 @@ Il est impportant de definir son propre fichier ``.env `` pour que le projet pui
 ``localhost:Port/api/ideas``
 ## Pour afficher ou modifier une seule idee, la route établie est :
 ``localhost:Port/api/ideas/{id}``
+## Pour supprimer une idee, la route est:
+``localhost:Port/api/ideas/delete/{id}``
 
 
