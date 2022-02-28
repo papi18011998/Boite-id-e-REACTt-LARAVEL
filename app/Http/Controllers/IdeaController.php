@@ -21,8 +21,17 @@ class IdeaController extends Controller
         $new_idea = Idea::create([
             'title'=>$request->title,
             'description'=>$request->description,
-            'status'=>$request->status
+            'status'=>0
         ]);
         return $new_idea;
+    }
+    public function update($id,Request $request){
+        $get_idea_to_update = Idea::findOrFail($id);
+        $get_idea_to_update->update([
+            'title'=>$request->title,
+            'description'=>$request->description,
+            'status'=>0
+        ]);
+        return $get_idea_to_update;
     }
 }

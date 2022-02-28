@@ -19,7 +19,7 @@ Il est impportant de definir son propre fichier ``.env `` pour que le projet pui
 ``localhost:Port/api/ideas``
 ## Pour avoir la liste de toutes le idees, la route de l'API est:
 ``localhost:Port/api/ideas``
-######Pour afficher une seule idee, la route établie est :
+## Pour afficher ou modifier une seule idee, la route établie est :
 ``localhost:Port/api/ideas/{id}``
 
 
