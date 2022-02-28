@@ -14,12 +14,12 @@ Dans ce depot nous avons creer une simple application de boite à idée en utili
 - Et envoyer vos pull requests <br />
 Il est impportant de definir son propre fichier ``.env `` pour que le projet puisse marcher sinon une ``erreur 500`` sera la bienvenue
 ## THIARE 💡
-#Ajouter une nouvelle idee
-###Pour ajouter une nouvelle idee, la route est:
+# Ajouter une nouvelle idee
+## Pour ajouter une nouvelle idee, la route est:
 ``localhost:Port/api/ideas``
-### Pour avoir la liste de toutes le idees, la route de l'API est:
-``localhost:Port/api/ideas`` 
-###Pour afficher une seule idee, la route établie est :
+## Pour avoir la liste de toutes le idees, la route de l'API est:
+``localhost:Port/api/ideas``
+## Pour afficher une seule idee, la route établie est :
 ``localhost:Port/api/ideas/{id}``
 
 
