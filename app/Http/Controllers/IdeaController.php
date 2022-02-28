@@ -59,4 +59,26 @@ class IdeaController extends Controller
         }
         return new JsonResponse($message,$status);
     }
+    public function channge_status($id){
+        $get_idea_to_change = Idea::find($id);
+        $message = '';
+        $status =0;
+        if (is_null($get_idea_to_change)){
+            $message ="L'idée que vous souhaitez modifier n'existe pas";
+            $status = 404;
+        }else{
+            if ($get_idea_to_change->status==1){
+                $get_idea_to_change->update([
+                    'status'=>0
+                ]);
+            }else{
+                $get_idea_to_change->update([
+                    'status'=>1
+                ]);
+            }
+            $message ="Le statut de l'idée a bien changé";
+            $status = 200;
+        }
+        return new JsonResponse($message,$status);
+    }
 }
