@@ -24,4 +24,9 @@ Il est impportant de definir son propre fichier ``.env `` pour que le projet pui
 ## Pour supprimer une idee, la route est:
 ``localhost:Port/api/ideas/delete/{id}``
 
+## Modifier le statut d'une idee
+``localhost:Port/api/ideas/status/{id}``
+### Servez-vous l'API vous appatient
+![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhSzUCMHoHQabEYCXUzSrVopWQqd2mCxQ4I0tuZ6v_8-zYrTZdmg1X0aDyi_9t5VZMagQ&usqp=CAU)
+
 
