@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Idea;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class IdeaController extends Controller
@@ -15,5 +16,13 @@ class IdeaController extends Controller
     public function show($id){
         $idea = Idea::findOrFail($id);
         return $idea;
+    }
+    public function store(Request $request){
+        $new_idea = Idea::create([
+            'title'=>$request->title,
+            'description'=>$request->description,
+            'status'=>$request->status
+        ]);
+        return $new_idea;
     }
 }

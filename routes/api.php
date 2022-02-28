@@ -20,4 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::get('ideas',[IdeaController::class,'index']);
 Route::get('ideas/{id}',[IdeaController::class,'show']);
+Route::post('ideas',[IdeaController::class,'store']);
  
