@@ -19,7 +19,14 @@ Il est impportant de definir son propre fichier ``.env `` pour que le projet pui
 ``localhost:Port/api/ideas``
 ## Pour avoir la liste de toutes le idees, la route de l'API est:
 ``localhost:Port/api/ideas``
-######Pour afficher une seule idee, la route établie est :
+## Pour afficher ou modifier une seule idee, la route établie est :
 ``localhost:Port/api/ideas/{id}``
+## Pour supprimer une idee, la route est:
+``localhost:Port/api/ideas/delete/{id}``
+
+## Modifier le statut d'une idee
+``localhost:Port/api/ideas/status/{id}``
+### Servez-vous l'API vous appatient
+![image](https://i0.wp.com/www.frenchweb.fr/wp-content/uploads/2016/11/nicolas-hachet-2016.gif?resize=650%2C400&ssl=1)
 
 
